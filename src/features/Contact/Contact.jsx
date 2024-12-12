@@ -1,5 +1,6 @@
 import './contacts.style.css'
 import ContactsImg from '../../assets/user.png'
+import Button from '../../components/Button/Button'
 
 const Contact = () => {
     return(
@@ -48,7 +49,9 @@ const Contact = () => {
                         <input type='checkbox'/>
                         <span>Click to accept <span className='terms_of_service'>Terms of Service</span></span>
                     </label>
-                    <button>Submit your request</button>
+                    <Button
+                    label='Submit your request'
+                    />
                 </form>
             </div>
         </div>

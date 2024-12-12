@@ -1,5 +1,5 @@
 import '../offer.style.css'
-import ExampleImg from '../../../assets/headphones20.webp'
+import Button from '../../../components/Button/Button'
 
 const Item = ({title, description, price, image}) => {
     return(
@@ -12,7 +12,9 @@ const Item = ({title, description, price, image}) => {
                 <p>${price}</p>
             </div>
             <p className='item_description item_spacing'>{description}</p>
-            <button>Cart Button</button>
+            <Button
+            label='Add to Cart'
+            />
         </div>
     )
 }

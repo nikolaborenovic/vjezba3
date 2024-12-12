@@ -1,4 +1,5 @@
 import '../home.style.css'
+import Button from '../../../components/Button/Button'
 
 const SectionFive = () => {
     return(
@@ -7,7 +8,9 @@ const SectionFive = () => {
                 <h2>Product Information</h2>
                 <div className='section_five_email_input'>
                     <input placeholder='Enter Your Email Here'/>
-                    <button>Get Product Information</button>
+                    <Button
+                    label='Get Product Information'
+                    />
                 </div>
             </div>
             <div className='section_five_main'>

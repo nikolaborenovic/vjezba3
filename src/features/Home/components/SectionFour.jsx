@@ -1,5 +1,6 @@
 import '../home.style.css'
 import CardImg from '../../../assets/cardHeadphones.webp'
+import Button from '../../../components/Button/Button'
 
 const SectionFour = () => {
     return(
@@ -11,21 +12,27 @@ const SectionFour = () => {
                     <h5>Simple</h5>
                     <p>Security Device with Monthly Service</p>
                     <p className='section_four_price'>19$</p>
-                    <button>SHOP NOW</button>
+                    <Button
+                    label='SHOP NOW'
+                    />
                 </div>
                 <div className='section_four_card'>
                     <img src={CardImg}/>
                     <h5>Standard</h5>
                     <p>Security Device with Monthly Service</p>
                     <p className='section_four_price'>29$</p>
-                    <button>SHOP NOW</button>
+                    <Button
+                    label='SHOP NOW'
+                    />
                 </div>
                 <div className='section_four_card'>
                     <img src={CardImg}/>
                     <h5>Best Offer</h5>
                     <p>Security Device with Monthly Service</p>
                     <p className='section_four_price'>39$</p>
-                    <button>SHOP NOW</button>
+                    <Button
+                    label='SHOP NOW'
+                    />
                 </div>
             </div>
         </div>

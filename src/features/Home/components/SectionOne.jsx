@@ -6,6 +6,7 @@ import BussinesImgThree from '../../../assets/img3.png'
 import BussinesImgFour from '../../../assets/img4.png'
 import BussinesImgFive from '../../../assets/img5.jpeg'
 import BussinesImgSix from '../../../assets/img6.png'
+import Button from '../../../components/Button/Button'
 
 
 const SectionOne = () => {
@@ -18,7 +19,9 @@ const SectionOne = () => {
                         <h1>Innovative.</h1>
                     </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                    <button>ORDER NOW</button>
+                    <Button
+                    label='ORDER NOW'
+                    />
                 </div>
                 <img src={HomeImg}/>
             </div>

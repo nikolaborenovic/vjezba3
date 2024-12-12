@@ -1,5 +1,6 @@
 import '../home.style.css'
 import SectionThreeImg from '../../../assets/headphonesBlack.png'
+import Button from '../../../components/Button/Button'
 
 const SectionThree = () => {
     return(
@@ -7,7 +8,9 @@ const SectionThree = () => {
             <div className='section_three_main'>
                 <h1>SHOWCASE APPS, INNOVATIVE TECH OR BUSINESSES</h1>
                 <p>Never be without the product you need! Sign up today to save money and time. Cancel anytime.</p>
-                <button>ORDER NOW</button>
+                <Button
+                label='ORDER NOW'
+                />
             </div>
             <div className='section_three_image'>
                 <img src={SectionThreeImg}/>
