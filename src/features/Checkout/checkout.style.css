@@ -1,0 +1,176 @@
+/*Checkout address info CSS*/
+
+.checkout_wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 234, 234);
+}
+
+.checkout_holder {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkout_holder input {
+    border: 1px solid rgb(239, 234, 234);
+    padding: 5px;
+}
+
+.checkout_delivery_address_info {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.checkout_delivery_address_info p {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkout_input_name {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.checkout_input_name input {
+    width: 100%;
+    height: 30px;
+}
+
+.checkout_delivery_address_info h3 {
+    margin: 0px;
+    cursor: default;
+}
+
+.checkout_input_address {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkout_input_street_address {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.checkout_input_street_address input {
+    width: 100%;
+    height: 30px;
+}
+
+.checkout_input_city_state {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.checkout_input_city_state input {
+    width: 100%;
+    height: 30px;
+}
+
+.checkout_billing_checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkout_billing_checkbox input {
+    cursor: pointer;
+}
+
+.checkout_billing_checkbox span{
+    font-size: 12px;
+}
+
+/*Checkout contact info CSS*/
+
+.checkout_contact_info {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.checkout_contact_info h3 {
+    margin: 0px;
+    cursor: default;
+}
+
+.checkout_contact_phone_email {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.checkout_contact_phone_email input {
+    width: 100%;
+    height: 30px;
+}
+
+.checkout_privacy_notification {
+    width: 100%;
+    line-height: 22px;
+}
+
+.checkout_privacy_notification p {
+    opacity: .7;
+    font-size: 14px;
+}
+
+.checkout_privacy_policy {
+    font-weight: bold;
+    opacity: 1!important;
+}
+
+.checkout_privacy_policy span {
+    filter: grayscale(1);
+    
+}
+
+.checkout_notifications_checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkout_notifications_checkbox input {
+    cursor: pointer;
+}
+
+.checkout_notifications_checkbox span{
+    font-size: 12px;
+}
+
+.checkout_button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout_button  button {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
