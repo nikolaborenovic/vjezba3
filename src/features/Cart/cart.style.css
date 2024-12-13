@@ -27,20 +27,16 @@
 .cart_promo_input {
     width: 100%;
     display: flex;
-    height: 30px;
+}
+
+.cart_buttons button {
+    width: 100%;
 }
 
 .cart_promo_input input {
     flex: 1;
     border-radius: 6px;
     border: 1px solid rgb(229, 227, 227);
-}
-
-.cart_promo_input button {
-    border: none;
-    border-radius: 6px;
-    background-color: #e74c3c;
-    color: white;
 }
 
 .discount_amount {
@@ -84,15 +80,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.cart_buttons button {
-    width: 100%;
-    height: 30px;
-    border: 1px solid rgb(229, 227, 227);
-    background-color: white;
-    border-radius: 5px;
-    font-weight: bold;
 }
 
 .cart_added_items {

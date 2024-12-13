@@ -2,7 +2,7 @@ import '../home.style.css'
 import SectionSevenImg from '../../../assets/headphonesWhite.png'
 import Button from '../../../components/Button/Button'
 
-const SectionSeven = () => {
+const SectionSeven = ({handleRedirect}) => {
     return(
         <div className='section_seven_wrapper'>
             <div className='section_seven_holder'>
@@ -14,6 +14,7 @@ const SectionSeven = () => {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                     <Button
                     label='ORDER NOW'
+                    handleClick={() => handleRedirect('/offer')}
                     />
                 </div>
                 <img src={SectionSevenImg}/>

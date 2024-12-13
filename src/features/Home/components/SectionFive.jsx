@@ -10,6 +10,8 @@ const SectionFive = () => {
                     <input placeholder='Enter Your Email Here'/>
                     <Button
                     label='Get Product Information'
+                    textColour='white'
+                    backgroundColor='#e74c3c'
                     />
                 </div>
             </div>

@@ -2,7 +2,7 @@ import '../home.style.css'
 import CardImg from '../../../assets/cardHeadphones.webp'
 import Button from '../../../components/Button/Button'
 
-const SectionFour = () => {
+const SectionFour = ({handleRedirect}) => {
     return(
         <div className='section_four_holder'>
             <h3>Our Packages</h3>
@@ -14,6 +14,9 @@ const SectionFour = () => {
                     <p className='section_four_price'>19$</p>
                     <Button
                     label='SHOP NOW'
+                    textColor='white'
+                    backgroundColor='#e74c3c'
+                    handleClick={() => handleRedirect('/offer')}
                     />
                 </div>
                 <div className='section_four_card'>
@@ -23,6 +26,9 @@ const SectionFour = () => {
                     <p className='section_four_price'>29$</p>
                     <Button
                     label='SHOP NOW'
+                    textColor='white'
+                    backgroundColor='#e74c3c'
+                    handleClick={() => handleRedirect('/offer')}
                     />
                 </div>
                 <div className='section_four_card'>
@@ -32,6 +38,9 @@ const SectionFour = () => {
                     <p className='section_four_price'>39$</p>
                     <Button
                     label='SHOP NOW'
+                    textColor='white'
+                    backgroundColor='#e74c3c'
+                    handleClick={() => handleRedirect('/offer')}
                     />
                 </div>
             </div>

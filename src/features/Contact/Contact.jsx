@@ -51,6 +51,9 @@ const Contact = () => {
                     </label>
                     <Button
                     label='Submit your request'
+                    textColour='white'
+                    backgroundColor='#e74c3c'
+                    borderRadius='10px'
                     />
                 </form>
             </div>

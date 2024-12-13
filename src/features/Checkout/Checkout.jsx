@@ -11,7 +11,6 @@ const Checkout = () => {
                         <input type='text' placeholder='*First Name'/>
                         <input type='text' placeholder='*Last Name'/>
                     </div>
-                    <p>+ Add Company Address</p>
                     <div className='checkout_input_address'>
                         <div className='checkout_input_street_address'>
                             <input type='text' placeholder='*Street Address'/>
@@ -46,6 +45,9 @@ const Checkout = () => {
                 <div className='checkout_button'>
                     <Button
                     label='Proceed to Savings & Payments'
+                    textColour='white'
+                    backgroundColor='#e74c3c'
+                    borderRadius='10px'
                     />
                 </div>
             </div>

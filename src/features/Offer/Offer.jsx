@@ -1,14 +1,21 @@
 import { useEffect, useState } from "react";
 import Item from "./components/Item";
 import { getAllItems } from "../../data/itemsdata";
+import { useOrderStore } from "../../store/order.store";
 
 const Offer = () => {
+    const {addItemToCart} = useOrderStore();
     const [items, setItems] = useState([])
+
+    const addItem = (item) => {
+        addItemToCart(item)
+    }
 
     useEffect(() => {
         getAllItems().then((response) => {
             setItems(response)
         })
+
     }, [])
     
     return(
@@ -20,6 +27,8 @@ const Offer = () => {
                     description={item.description}
                     price={item.price}
                     image={item.image}
+                    handleAdd={addItem}
+                    item={item}
                 />
             ))}
         </div>

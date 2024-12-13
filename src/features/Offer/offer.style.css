@@ -47,17 +47,6 @@
     margin: 0px auto;
 }
 
-.item_holder button {
-    width: 100%;
-    max-width: 100px;
-    border-radius: 20px;
-    height: 30px;
-    background-color: #e74c3c;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
 /*Item CSS End*/
 
 .offer_items_container {

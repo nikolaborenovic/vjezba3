@@ -2,7 +2,7 @@ import '../home.style.css'
 import SectionThreeImg from '../../../assets/headphonesBlack.png'
 import Button from '../../../components/Button/Button'
 
-const SectionThree = () => {
+const SectionThree = ({handleRedirect}) => {
     return(
         <div className='section_three_holder'>
             <div className='section_three_main'>
@@ -10,6 +10,7 @@ const SectionThree = () => {
                 <p>Never be without the product you need! Sign up today to save money and time. Cancel anytime.</p>
                 <Button
                 label='ORDER NOW'
+                handleClick={() => handleRedirect('/offer')}
                 />
             </div>
             <div className='section_three_image'>

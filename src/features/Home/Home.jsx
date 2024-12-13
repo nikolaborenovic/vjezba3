@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import SectionFive from './components/SectionFive';
 import SectionFour from './components/SectionFour';
 import SectionOne from './components/SectionOne';
@@ -9,15 +10,19 @@ import './home.style.css'
 
 
 const Home = () => {
+    const navigate = useNavigate();
+    const handleRedirect = (route) => {
+        navigate(route)
+    }
     return(
         <div>
-            <SectionOne/>
+            <SectionOne handleRedirect={handleRedirect}/>
             <SectionTwo/>
-            <SectionThree/>
-            <SectionFour/>
+            <SectionThree handleRedirect={handleRedirect}/>
+            <SectionFour handleRedirect={handleRedirect}/>
             <SectionFive/>
             <SectionSix/>
-            <SectionSeven/>
+            <SectionSeven handleRedirect={handleRedirect}/>
         </div>
     )
 }

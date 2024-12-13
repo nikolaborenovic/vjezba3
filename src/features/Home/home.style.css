@@ -39,16 +39,6 @@
     padding-top: 30px;
  }
 
- .section_one_text button {
-    width: 100%;
-    max-width: 150px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    border: none;
-    font-weight: bold;
- }
-
  .section_one_text button:hover {
     cursor: pointer;
     background-color: white;
@@ -245,16 +235,6 @@
     margin: 0px;
  }
 
- .section_four_card button {
-    width: 100%;
-    max-width: 150px;
-    height: 40px;
-    background-color:#e74c3c;
-    color: white;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
- }
 
  .section_four_price {
     color: #e74c3c;
@@ -305,17 +285,6 @@
 .section_five_email_input input {
     width: 100%;
     max-width: 250px;
-}
-
-.section_five_email_input button {
-    width: 100%;
-    max-width: 250px;
-    height: 35px;
-    background-color:#e74c3c;
-    color: white;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .section_five_main {

@@ -7,6 +7,7 @@ import HowTo from './features/How-to/HowTo'
 import About from './features/About/About'
 import Contact from './features/Contact/Contact'
 import Cart from './features/Cart/Cart'
+import Checkout from './features/Checkout/Checkout'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
         </Routes>
       </BrowserRouter>
     </div>

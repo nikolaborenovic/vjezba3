@@ -1,8 +1,15 @@
 import './button.style.css'
 
-const Button = ({label}) => {
+const Button = ({label, textColour, backgroundColor, borderRadius, handleClick}) => {
     return(
-        <button>{label}</button>
+        <button className='default_button'
+        style={{
+            backgroundColor: backgroundColor,
+            color: textColour,
+            borderRadius: borderRadius
+        }}
+        onClick={handleClick}
+        >{label}</button>
     )
 }
 
