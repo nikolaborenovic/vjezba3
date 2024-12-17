@@ -1,8 +1,8 @@
 import '../cart.style.css'
 import { useOrderStore } from '../../../store/order.store'
 
-const CartItem = ({title, description, price, image, item, handleAdd}) => {
-    const {removeItemFromCart} = useOrderStore();
+const CartItem = ({title, description, totalPrice, image, item, quantity}) => {
+    const {removeItemFromCart, increaseItemQuantity, decreaseItemQuantity} = useOrderStore();
     return(
         <div className='cart_item_holder'>
             <div className='cart_item_image'>
@@ -13,11 +13,11 @@ const CartItem = ({title, description, price, image, item, handleAdd}) => {
                 <p>{description}</p>
             </div>
             <div className='cart_item_amount'>
-                <span className='add_reduce_items'>-</span>
-                <span>0</span>
-                <span className='add_reduce_items'>+</span>
+                <span className='add_reduce_items' onClick={() => decreaseItemQuantity(item.id)}>-</span>
+                <span>{quantity}</span>
+                <span className='add_reduce_items' onClick={() => increaseItemQuantity(item.id)}>+</span>
             </div>
-            <p>{price}$</p>
+            <p>{totalPrice}$</p>
             <span className='remove_cart_item' 
             onClick={() => removeItemFromCart(item)}
             >X</span>
