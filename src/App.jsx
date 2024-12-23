@@ -8,11 +8,14 @@ import About from './features/About/About'
 import Contact from './features/Contact/Contact'
 import Cart from './features/Cart/Cart'
 import Checkout from './features/Checkout/Checkout'
+import { Notification } from './components/Notification/Notification'
+import { useOrderStore } from './store/order.store'
 
 function App() {
-
+const { dialogContent } = useOrderStore();
   return (
     <div>
+      {dialogContent.isVisible && <Notification/>}
       <BrowserRouter>
         <Navigation/>
         <Routes>

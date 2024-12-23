@@ -6,6 +6,7 @@ import { useOrderStore } from '../../store/order.store';
 import Item from '../Offer/components/Item';
 import { useState } from 'react';
 import { findDiscountbyCode } from '../../data/discounts';
+import EmptyCart from './components/EmptyCart';
 
 const Cart = () => {
     const {orderList, clearCart} = useOrderStore();
@@ -38,7 +39,7 @@ const Cart = () => {
     
 
     if(!orderList.length) {
-        return <h2 className='cart_empty'>Cart Is Empty!</h2>
+        return <EmptyCart/>
     }
 
     return(
