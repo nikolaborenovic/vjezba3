@@ -1,11 +1,9 @@
-import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
-import { useState } from 'react';
 import { useOrderStore } from '../../store/order.store';
 
 export const Notification = () => {
-    const {dialogContent, setDialogContent} = useOrderStore();
+  const {dialogContent, setDialogContent} = useOrderStore();
 
   
 

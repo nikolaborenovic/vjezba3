@@ -10,6 +10,7 @@ import './home.style.css'
 
 
 const Home = () => {
+    
     const navigate = useNavigate();
     const handleRedirect = (route) => {
         navigate(route)
