@@ -1,16 +1,18 @@
-import './checkout.style.css'
-import Button from '../../components/Button/Button'
 import { useNavigate } from 'react-router-dom';
 import { useOrderStore } from '../../store/order.store'
-
+import Button from '../../components/Button/Button'
+import './checkout.style.css'
 
 const Checkout = () => {
     const navigate = useNavigate();
-    const {dialogContent, setDialogContent} = useOrderStore();
+    const {setDialogContent} = useOrderStore();
+
+    //Navigate to another route and set message for order
     const handleRedirect = (route) => {
         navigate(route)
         setDialogContent({isVisible: true, message: 'Your order has been recieved!', severity: 'success'})
     }
+
     return(
         <div className='checkout_wrapper'>
             <div className='checkout_holder'>
